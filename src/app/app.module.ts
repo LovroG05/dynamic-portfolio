@@ -11,6 +11,7 @@ import { CardsComponent } from './cards/cards.component';
 import { SocialLogoComponent } from './social-logo/social-logo.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ProjectDirective } from './project.directive';
+import { ContactMeComponent } from './contact-me/contact-me.component';
 
 
 
@@ -25,6 +26,7 @@ import { ProjectDirective } from './project.directive';
     SocialLogoComponent,
     PortfolioComponent,
     ProjectDirective,
+    ContactMeComponent,
   ],
   imports: [
     BrowserModule,

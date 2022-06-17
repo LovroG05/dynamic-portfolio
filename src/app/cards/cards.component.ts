@@ -6,8 +6,6 @@ import { Component, ComponentRef, Input, ViewChild, ViewContainerRef } from '@an
   styleUrls: ['./cards.component.scss']
 })
 export class CardsComponent {
-
-
   @Input() url!: string;
   @Input() imgUrl!: string;
   @Input() title!: string;
