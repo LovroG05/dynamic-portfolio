@@ -3,14 +3,33 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BannerComponent } from './banner/banner.component';
+import { AboutMeComponent } from './about-me/about-me.component';
+import { ParagraphHeadingComponent } from './paragraph-heading/paragraph-heading.component';
+import { ParagraphComponent } from './paragraph/paragraph.component';
+import { CardsComponent } from './cards/cards.component';
+import { SocialLogoComponent } from './social-logo/social-logo.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
+import { ProjectDirective } from './project.directive';
+
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    BannerComponent,
+    AboutMeComponent,
+    ParagraphHeadingComponent,
+    ParagraphComponent,
+    CardsComponent,
+    SocialLogoComponent,
+    PortfolioComponent,
+    ProjectDirective,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
