@@ -17,4 +17,5 @@ COPY . /app
 RUN ng build
 
 FROM nginx:latest AS release
+COPY nginx.conf /etc/nginx/nginx.conf
 COPY --from=build-step app/dist/portfolioremake /usr/share/nginx/html/
