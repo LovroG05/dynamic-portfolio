@@ -20,7 +20,7 @@ RUN npm install -g @angular/cli@7.3.9
 # add app
 COPY . /app
 
-RUN ng build --prod
+RUN ng build
 
 WORKDIR /app/dist/portfolioremake
 
