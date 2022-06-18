@@ -4,4 +4,10 @@ img {
     height: 50px;
     padding-left: 2px;
     padding-right: 2px;
+
+    &:hover {
+        transform: translateY(-5%);
+        transition: 250ms ease-out;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    }
 }
