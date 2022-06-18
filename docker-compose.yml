@@ -8,8 +8,7 @@ services:
 
     # Maps port on the local machine to port on Docker image
     ports:
-      - "4200:4200"
-      
+      - "80:80"      
     volumes: 
     # Copy changes made to the project to your image in real-time.
       - .:/app
