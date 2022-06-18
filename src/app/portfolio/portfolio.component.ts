@@ -20,7 +20,7 @@ export class PortfolioComponent implements OnInit {
 
   ngOnInit(): void {
     const viewContainerRef = this.projectHost.viewContainerRef;
-    axios.get("http://127.0.0.1:8000/api/getprojects/").then(response => {
+    axios.get("https://api.perchperkins.ml/api/getprojects/").then(response => {
       response.data.forEach((project: any) => {
         const pr = new ProjectItem(CardsComponent, project);
         const componentRef = viewContainerRef.createComponent<CardsComponent>(pr.component);

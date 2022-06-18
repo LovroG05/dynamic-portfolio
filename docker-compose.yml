@@ -1,0 +1,16 @@
+# Verion of docker-compose to use 
+version: "3"
+
+services:
+  angular_portfolio:
+    build:
+      context: . #Sets the directory for docker-compose to build.
+
+    # Maps port on the local machine to port on Docker image
+    ports:
+      - "4200:4200"
+      
+    volumes: 
+    # Copy changes made to the project to your image in real-time.
+      - .:/app
+      - /app/node_modules
