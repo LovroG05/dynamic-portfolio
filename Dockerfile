@@ -16,10 +16,13 @@ ENV PATH /app/node_modules/.bin:$PATH
 COPY package.json /app/package.json
 RUN npm install
 RUN npm install -g @angular/cli@7.3.9
-RUN ng build
 
 # add app
-COPY ./dist/portfolioremake /app
+COPY . /app
+
+RUN ng build --prod
+
+WORKDIR /app/dist/portfolioremake
 
 # start app
 CMD ng serve --host 0.0.0.0
